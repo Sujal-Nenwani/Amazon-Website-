@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Amazon-inspired shopping homepage built as an HTML and CSS ICT project.">
+  <title>Amazon-Inspired Store | ICT Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="topbar">
+      <div class="container topbar-content">
+        <a class="brand" href="#top" aria-label="Amazon-inspired project homepage">
+          <span class="brand-name">amazon</span><span class="brand-smile" aria-hidden="true"></span>
+          <span class="brand-note">ICT PROJECT</span>
+        </a>
+        <div class="delivery" aria-label="Deliver to Pakistan">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <div><span class="micro">Deliver to</span><span class="strong">Pakistan</span></div>
+        </div>
+        <!-- The form opens real Amazon search results; it does not search the demo cards. -->
+        <form class="search-form" action="https://www.amazon.com/s" method="get" target="_blank" role="search" aria-label="Search on Amazon">
+          <label class="sr-only" for="department">Department</label>
+          <select id="department" class="search-category" name="i">
+            <option value="aps">All</option>
+            <option value="electronics">Electronics</option>
+            <option value="videogames">Video Games</option>
+            <option value="fashion">Fashion</option>
+            <option value="home-garden">Home</option>
+          </select>
+          <label class="sr-only" for="search-query">Search Amazon</label>
+          <input id="search-query" class="search-field" type="search" name="k" placeholder="Search Amazon" required>
+          <button class="search-submit" type="submit" aria-label="Search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="10.7" cy="10.7" r="6.6"/><path d="m16 16 5 5"/></svg>
+          </button>
+        </form>
+        <nav class="nav-quick" aria-label="Account navigation">
+          <a class="nav-link account-link" href="https://www.amazon.com/gp/css/homepage.html" target="_blank" rel="noopener noreferrer"><span class="micro">Hello, sign in</span><span class="strong">Account &amp; Lists</span></a>
+          <a class="nav-link orders-link" href="https://www.amazon.com/gp/your-account/order-history" target="_blank" rel="noopener noreferrer"><span class="micro">Returns</span><span class="strong">&amp; Orders</span></a>
+          <a class="nav-link cart-link" href="https://www.amazon.com/gp/cart/view.html" target="_blank" rel="noopener noreferrer" aria-label="Open Amazon cart">
+            <svg viewBox="0 0 42 35" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"><path d="M1 4h6l5 20h23l5-15H10"/><circle cx="16" cy="30" r="2" fill="currentColor" stroke="none"/><circle cx="33" cy="30" r="2" fill="currentColor" stroke="none"/></svg>
+            <span class="cart-label">Cart</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+    <nav class="secondary-nav" aria-label="Main navigation">
+      <div class="container secondary-content">
+        <a href="#categories"><span aria-hidden="true">☰</span> All</a>
+        <a href="https://www.amazon.com/gp/goldbox/" target="_blank" rel="noopener noreferrer">Today's Deals</a>
+        <a href="https://www.amazon.com/gp/help/customer/display.html" target="_blank" rel="noopener noreferrer">Customer Service</a>
+        <a href="https://www.amazon.com/gift-cards/" target="_blank" rel="noopener noreferrer">Gift Cards</a>
+        <a href="https://sell.amazon.com/" target="_blank" rel="noopener noreferrer">Sell</a>
+        <a class="promo-nav" href="#categories">Explore shopping categories →</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="eyebrow">Discover more • shop smarter</span>
+          <h1 id="hero-heading">Great finds for <span>everyday life.</span></h1>
+          <p class="hero-copy">Explore gaming gear, fashion, home essentials and gifts — all in one Amazon-inspired shopping experience.</p>
+          <a class="hero-cta" href="#categories">Explore categories <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <span class="floating-tag one">⭐ Featured picks</span>
+          <svg class="hero-package" viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="256" cy="268" rx="180" ry="22" fill="#b9a18b" opacity=".24"/>
+            <path d="M108 137 251 77 393 134 248 195Z" fill="#e8a548"/>
+            <path d="M108 137 248 195V278L108 219Z" fill="#b76b25"/>
+            <path d="M248 195 393 134V218L248 278Z" fill="#db8b37"/>
+            <path d="M206 96 348 153 308 171 169 112Z" fill="#ffcf77" opacity=".75"/>
+            <path d="M272 185v82" stroke="#a55c20" stroke-width="4" opacity=".35"/>
+            <path d="M294 229q27 15 51-6" stroke="#563b19" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="m332 220 15 2-8 13" stroke="#563b19" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <rect x="153" y="103" width="73" height="17" rx="8.5" transform="rotate(-23 153 103)" fill="#9dcae0"/>
+            <path d="M161 56c1-22 44-35 60-8l6 10" stroke="#28384a" stroke-width="16" fill="none" stroke-linecap="round"/>
+            <rect x="140" y="48" width="34" height="69" rx="16" transform="rotate(-20 140 48)" fill="#253549"/>
+            <rect x="216" y="41" width="35" height="72" rx="16" transform="rotate(12 216 41)" fill="#253549"/>
+            <rect x="278" y="46" width="132" height="81" rx="18" fill="#faf9f6" transform="rotate(12 278 46)"/>
+            <rect x="302" y="64" width="82" height="43" rx="14" transform="rotate(12 302 64)" fill="#434d62"/>
+            <g transform="rotate(12 344 86)" stroke="#d0d9e8" stroke-width="4" stroke-linecap="round"><path d="M329 86h18M338 77v18"/><circle cx="362" cy="79" r="3" fill="#ffbb57" stroke="none"/><circle cx="370" cy="92" r="3" fill="#ffbb57" stroke="none"/></g>
+            <path d="M302 117q5 24-12 36" stroke="#414c60" stroke-width="5" fill="none"/>
+            <circle cx="117" cy="103" r="17" fill="#ffa958"/>
+            <path d="M107 103h20M117 93v20" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <span class="floating-tag two">🎁 Something for everyone</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="container shop-area">
+      <div class="info-banner">Educational website demo made with HTML &amp; CSS. For real products, the search and category links open <a href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer">Amazon.com</a>.</div>
+      <section id="categories" aria-labelledby="categories-heading">
+        <div class="section-header"><h2 id="categories-heading">Shop by category</h2><p>Find the things you love</p></div>
+        <div class="shop-grid">
+          <article class="product-card">
+            <h3>Gaming accessories</h3>
+            <div class="card-image shade-blue">
+              <svg viewBox="0 0 320 215" role="img" aria-label="Illustration of gaming controller and gaming headset" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="167" cy="185" rx="115" ry="12" fill="#7392c2" opacity=".22"/>
+                <path d="M178 76C188 16 255 23 262 83" fill="none" stroke="#303f65" stroke-width="18" stroke-linecap="round"/>
+                <rect x="167" y="71" width="28" height="75" rx="12" transform="rotate(-16 167 71)" fill="#38486d"/>
+                <rect x="243" y="70" width="28" height="75" rx="12" transform="rotate(13 243 70)" fill="#38486d"/>
+                <path d="M69 114c8-32 29-40 55-35l74 0c23-3 42 10 51 35l11 35c7 25-14 39-33 27l-37-26h-53l-39 26c-18 13-41-5-31-28Z" fill="#fff" stroke="#cbd8ed" stroke-width="4"/>
+                <path d="M108 115v28m-14-14h28" stroke="#52618a" stroke-width="9" stroke-linecap="round"/>
+                <circle cx="205" cy="120" r="8" fill="#f8a544"/><circle cx="225" cy="136" r="8" fill="#7cbbf1"/>
+                <circle cx="142" cy="155" r="7" fill="#aebcd5"/><circle cx="178" cy="155" r="7" fill="#aebcd5"/>
+              </svg>
+            </div>
+            <p class="card-description">Controllers, headsets and upgrades for your setup.</p>
+            <a class="card-link" href="https://www.amazon.com/s?k=gaming+accessories" target="_blank" rel="noopener noreferrer">See more <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="product-card">
+            <h3>Delightful deals</h3>
+            <div class="card-image shade-peach">
+              <svg viewBox="0 0 320 215" role="img" aria-label="Illustration of shopping bags with discount labels" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="164" cy="189" rx="108" ry="10" fill="#bb7658" opacity=".2"/>
+                <path d="M60 70h133l10 109H50Z" fill="#e6784e"/><path d="M87 76V59c0-33 71-34 71 0v17" fill="none" stroke="#a94c32" stroke-width="8"/>
+                <path d="M155 98h110l-8 82H162Z" fill="#fff8ec"/><path d="M176 106V93c0-23 55-24 55 0v13" fill="none" stroke="#d59d77" stroke-width="7"/>
+                <circle cx="221" cy="143" r="22" fill="#ffbd55"/><path d="m209 153 23-23" stroke="#fff" stroke-width="5"/><circle cx="212" cy="134" r="4" fill="#fff"/><circle cx="230" cy="152" r="4" fill="#fff"/>
+                <path d="m100 108 36-13 23 26-33 36-35-30Z" fill="#ffe8cf"/><circle cx="130" cy="109" r="5" fill="#e6784e"/>
+                <path d="m104 126 14 10 24-21" fill="none" stroke="#e6784e" stroke-width="5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <p class="card-description">Everyday essentials, fun finds and great value.</p>
+            <a class="card-link" href="https://www.amazon.com/gp/goldbox/" target="_blank" rel="noopener noreferrer">See more <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="product-card">
+            <h3>Small gifts under $20</h3>
+            <div class="card-image shade-purple">
+              <svg viewBox="0 0 320 215" role="img" aria-label="Illustration of wrapped gift boxes" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="156" cy="189" rx="120" ry="10" fill="#7b70a7" opacity=".2"/>
+                <rect x="73" y="91" width="128" height="91" rx="5" fill="#8861bf"/><rect x="66" y="81" width="142" height="23" rx="4" fill="#a784db"/>
+                <path d="M125 82v101" stroke="#ffde80" stroke-width="20"/>
+                <path d="M125 82c-18-15-51-29-51-6 0 15 39 12 51 6Zm0 0c13-18 46-34 49-9 2 14-32 16-49 9Z" fill="#ffd76f"/>
+                <rect x="194" y="115" width="70" height="65" rx="5" fill="#ffd878"/><rect x="187" y="105" width="82" height="18" rx="4" fill="#ffe9a8"/>
+                <path d="M225 107v73" stroke="#f392a2" stroke-width="13"/>
+                <path d="M226 106c-14-6-24-22-10-26 12-4 13 13 10 26Zm0 0c10-18 27-26 31-12 4 12-18 15-31 12Z" fill="#f392a2"/>
+                <path d="M52 66h21M63 55v22M247 58h17M255 49v17" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <p class="card-description">Thoughtful little surprises for any occasion.</p>
+            <a class="card-link" href="https://www.amazon.com/s?k=gifts+under+20+dollars" target="_blank" rel="noopener noreferrer">See more <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="product-card">
+            <h3>T-shirts &amp; trousers</h3>
+            <div class="card-image shade-mint">
+              <svg viewBox="0 0 320 215" role="img" aria-label="Illustration of a t-shirt and trousers" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="166" cy="192" rx="114" ry="10" fill="#7da89c" opacity=".2"/>
+                <path d="m112 44-39 15-31 48 34 17 21-27v85h92V97l21 27 33-17-29-48-39-15c-7 12-16 18-32 18s-25-6-31-18Z" fill="#fefefe" stroke="#d7e1dd" stroke-width="3"/>
+                <path d="M113 44c5 16 43 29 60 0" fill="none" stroke="#dce6e2" stroke-width="4"/>
+                <path d="M133 99h19" stroke="#ffc37f" stroke-width="6" stroke-linecap="round"/>
+                <path d="m210 91 60 0-1 101-25 0-5-70-6 70h-25Z" fill="#456d84"/>
+                <path d="M211 106h58m-29-15v15" stroke="#89a8b8" stroke-width="3"/><path d="M222 116h11m21 0h10" stroke="#2e536c" stroke-width="3"/>
+              </svg>
+            </div>
+            <p class="card-description">Comfortable clothing and easy everyday style.</p>
+            <a class="card-link" href="https://www.amazon.com/s?k=tshirts+and+trousers" target="_blank" rel="noopener noreferrer">See more <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="product-card">
+            <h3>Beds &amp; bedroom</h3>
+            <div class="card-image shade-sand">
+              <svg viewBox="0 0 320 215" role="img" aria-label="Illustration of a comfortable bed" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="164" cy="190" rx="125" ry="9" fill="#9c705f" opacity=".18"/>
+                <rect x="47" y="69" width="226" height="90" rx="17" fill="#aa735a"/><rect x="55" y="79" width="209" height="83" rx="10" fill="#d2a992"/>
+                <rect x="42" y="119" width="240" height="57" rx="11" fill="#f8f0df"/><rect x="53" y="113" width="213" height="26" rx="12" fill="#fffaf0"/>
+                <rect x="61" y="97" width="86" height="37" rx="14" fill="#f9faf8"/><rect x="164" y="97" width="86" height="37" rx="14" fill="#f9faf8"/>
+                <path d="M43 156h238v17H43Z" fill="#c68561"/><path d="M62 175v13M264 175v13" stroke="#7e513e" stroke-width="9" stroke-linecap="round"/>
+                <path d="M53 150h220" stroke="#e4d3be" stroke-width="4"/>
+              </svg>
+            </div>
+            <p class="card-description">Cozy designs to refresh your room.</p>
+            <a class="card-link" href="https://www.amazon.com/s?k=beds+bedroom+furniture" target="_blank" rel="noopener noreferrer">See more <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="product-card">
+            <h3>Gaming corner</h3>
+            <div class="card-image shade-dark">
+              <svg viewBox="0 0 320 215" role="img" aria-label="Illustration of computer gaming setup" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="166" cy="194" rx="127" ry="9" fill="#121833" opacity=".38"/>
+                <rect x="49" y="30" width="224" height="139" rx="10" fill="#161c33" stroke="#9b78e8" stroke-width="5"/>
+                <rect x="59" y="41" width="203" height="115" rx="4" fill="#273b60"/>
+                <path d="M61 143 119 72l31 37 39-46 71 83Z" fill="#835cc3"/><path d="m96 146 71-73 67 73Z" fill="#e48abb" opacity=".65"/>
+                <circle cx="208" cy="70" r="19" fill="#ffbf86"/><path d="M160 168h10v17h-10ZM136 186h60v7h-60Z" fill="#b0bad7"/>
+                <path d="M85 195h157l-19 10H105Z" fill="#161c33" stroke="#b8a5ff" stroke-width="2"/><path d="M116 198h104" stroke="#64d3ec" stroke-width="2" stroke-dasharray="6 4"/>
+              </svg>
+            </div>
+            <p class="card-description">Monitors, desks and setup inspiration.</p>
+            <a class="card-link" href="https://www.amazon.com/s?k=gaming+setup+desk" target="_blank" rel="noopener noreferrer">See more <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="product-card">
+            <h3>Watches</h3>
+            <div class="card-image shade-rose">
+              <svg viewBox="0 0 320 215" role="img" aria-label="Illustration of wristwatch" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="162" cy="192" rx="88" ry="8" fill="#bd8294" opacity=".2"/>
+                <path d="M141 15h42l-7 65h-28ZM148 138h28l7 63h-42Z" fill="#a36d6d"/>
+                <path d="M144 19h36m-34 175h35" stroke="#c79b97" stroke-width="4"/>
+                <circle cx="162" cy="110" r="70" fill="#d5a576"/><circle cx="162" cy="110" r="61" fill="#f9f3ed"/>
+                <circle cx="162" cy="110" r="50" fill="none" stroke="#ece0d5" stroke-width="2"/>
+                <g stroke="#917c71" stroke-width="3" stroke-linecap="round"><path d="M162 61v10M162 149v10M113 110h10M201 110h10"/></g>
+                <path d="M162 110V79m0 31 25 17" stroke="#5a5260" stroke-width="6" stroke-linecap="round"/><circle cx="162" cy="110" r="6" fill="#5a5260"/>
+                <rect x="230" y="103" width="18" height="14" rx="4" fill="#d5a576"/>
+              </svg>
+            </div>
+            <p class="card-description">Classic and modern looks for every day.</p>
+            <a class="card-link" href="https://www.amazon.com/s?k=wrist+watches" target="_blank" rel="noopener noreferrer">See more <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="product-card">
+            <h3>Headphones</h3>
+            <div class="card-image shade-aqua">
+              <svg viewBox="0 0 320 215" role="img" aria-label="Illustration of over-ear headphones" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="166" cy="189" rx="104" ry="9" fill="#5c9bac" opacity=".19"/>
+                <path d="M79 124v-28c0-104 162-104 162 0v28" fill="none" stroke="#2a536a" stroke-width="22" stroke-linecap="round"/>
+                <path d="M91 122V94c0-77 139-77 139 0v28" fill="none" stroke="#4b7990" stroke-width="6"/>
+                <rect x="66" y="106" width="50" height="75" rx="22" fill="#324f66"/><rect x="204" y="106" width="50" height="75" rx="22" fill="#324f66"/>
+                <rect x="102" y="117" width="23" height="57" rx="10" fill="#709cb0"/><rect x="195" y="117" width="23" height="57" rx="10" fill="#709cb0"/>
+                <path d="M220 178c0 24-21 25-50 25" fill="none" stroke="#324f66" stroke-width="5" stroke-linecap="round"/>
+                <rect x="152" y="195" width="23" height="10" rx="5" fill="#324f66"/>
+              </svg>
+            </div>
+            <p class="card-description">Wireless listening, music and gaming sound.</p>
+            <a class="card-link" href="https://www.amazon.com/s?k=headphones" target="_blank" rel="noopener noreferrer">See more <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+        <p class="note">Images are original built-in SVG illustrations so this project displays without additional image files or internet access. External shopping links require internet.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <a class="back-top" href="#top">Back to top ↑</a>
+    <div class="footer-main">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <h3>Get to Know Us</h3>
+          <ul>
+            <li><a href="https://www.aboutamazon.com/" target="_blank" rel="noopener noreferrer">About Amazon</a></li>
+            <li><a href="https://www.amazon.jobs/" target="_blank" rel="noopener noreferrer">Careers</a></li>
+            <li><a href="https://www.amazon.science/" target="_blank" rel="noopener noreferrer">Amazon Science</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Make Money with Us</h3>
+          <ul>
+            <li><a href="https://sell.amazon.com/" target="_blank" rel="noopener noreferrer">Sell on Amazon</a></li>
+            <li><a href="https://affiliate-program.amazon.com/" target="_blank" rel="noopener noreferrer">Become an Affiliate</a></li>
+            <li><a href="https://advertising.amazon.com/" target="_blank" rel="noopener noreferrer">Advertise products</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Shopping &amp; Payments</h3>
+          <ul>
+            <li><a href="https://www.amazon.com/gift-cards/" target="_blank" rel="noopener noreferrer">Gift Cards</a></li>
+            <li><a href="https://www.amazon.com/gp/goldbox/" target="_blank" rel="noopener noreferrer">Today's Deals</a></li>
+            <li><a href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer">Amazon.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Let Us Help You</h3>
+          <ul>
+            <li><a href="https://www.amazon.com/gp/css/homepage.html" target="_blank" rel="noopener noreferrer">Your Account</a></li>
+            <li><a href="https://www.amazon.com/gp/your-account/order-history" target="_blank" rel="noopener noreferrer">Your Orders</a></li>
+            <li><a href="https://www.amazon.com/gp/help/customer/display.html" target="_blank" rel="noopener noreferrer">Help</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Amazon-inspired ICT Project · Made with HTML &amp; CSS</p>
+        <p>For education only — not affiliated with or operated by Amazon.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
